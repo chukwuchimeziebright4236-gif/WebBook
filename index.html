@@ -11,13 +11,15 @@
       gtag('config', 'G-4FC0P9XK86');
     </script>
       
-    <meta name="monetag" content="c09445d188f6700cb38a48d7a626c85c">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>webBook - Reading Reimagined</title>
+    
+    <!-- New Monetag Multitag Script -->
+    <script src="https://quge5.com/88/tag.min.js" data-zone="254998" async data-cfasync="false"></script>
+
     <style>
-    a{ text-decoration:none;
-    }
+        a { text-decoration: none; }
         /* Base Reset & Variables */
         * {
             margin: 0;
@@ -156,9 +158,9 @@
         }
 
         .book-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 2rem;
+            display: flex;
+            justify-content: center;
+            margin-bottom: 4rem;
         }
 
         .book-card {
@@ -167,33 +169,25 @@
             overflow: hidden;
             box-shadow: 0 4px 6px rgba(0,0,0,0.05);
             transition: transform 0.3s;
+            width: 100%;
+            max-width: 350px;
         }
 
         .book-card:hover {
             transform: translateY(-5px);
         }
 
-        .book-cover-placeholder {
-            background-color: #bdc3c7;
-            height: 200px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: var(--white);
-            font-weight: bold;
-            font-size: 1.2rem;
-        }
-
         /* Cover Image Style for dynamic fitting */
         .book-cover-img {
             width: 100%;
-            height: 200px;
+            height: 250px;
             object-fit: cover;
             display: block;
         }
 
         .book-info {
             padding: 1.5rem;
+            text-align: center;
         }
 
         .book-title {
@@ -206,6 +200,40 @@
             font-size: 0.9rem;
             color: #7f8c8d;
             margin-bottom: 1rem;
+        }
+
+        /* News List Styling */
+        .news-heading {
+            text-align: center;
+            margin-bottom: 1.5rem;
+            color: var(--primary-color);
+            font-size: 1.8rem;
+        }
+
+        .news-list {
+            list-style: none;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 0;
+        }
+
+        .news-list li {
+            background: var(--white);
+            margin-bottom: 10px;
+            padding: 12px 20px;
+            border-radius: 6px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+            transition: background 0.2s;
+        }
+
+        .news-list li:hover {
+            background: #edf2f7;
+        }
+
+        .news-list a {
+            color: var(--accent-color);
+            font-weight: 500;
+            display: block;
         }
 
         /* Footer */
@@ -266,7 +294,7 @@
         <h2 class="section-title">Trending webBooks</h2>
         
         <div class="book-grid">
-            <!-- Contending For Dominion Card with New Image Cover -->
+            <!-- Contending For Dominion Card (Kept) -->
             <div class="book-card">
                 <img src="weapons.jpg" alt="Contending For Dominion Cover" class="book-cover-img">
                 <div class="book-info">
@@ -275,49 +303,20 @@
                     <a href="contents.html" class="btn" style="padding: 0.5rem 1rem; font-size: 0.9rem;">Open Book</a>
                 </div>
             </div>
-
-            <div class="book-card">
-                <div class="book-cover-placeholder" style="background: #9b59b6;">Mastering the Web</div>
-                <div class="book-info">
-                    <h3 class="book-title">Mastering the Web</h3>
-                    <p class="book-author">By Sarah Jenkins</p>
-                    <a href="contents.html" class="btn" style="padding: 0.5rem 1rem; font-size: 0.9rem;">Open Book</a>
-                </div>
-            </div>
-
-            <div class="book-card">
-                <div class="book-cover-placeholder" style="background: #1abc9c;">HTML Tutorial</div>
-                <div class="book-info">
-                    <h3 class="book-title">HTML Tutorial</h3>
-                    <p class="book-author">By Michael John</p>
-                    <a href="html_intro.html" class="btn" style="padding: 0.5rem 1rem; font-size: 0.9rem;">Open Book</a>
-                </div>
-            </div>
         </div>
-        <h2 style="text-align:center">Latest News</h2>
-        <ul>
-          
-          <li><a href="Nigeria.html">  FG Set to Evacuate Next Batch of Nigerian Citizens from South Africa on Tuesday</a></li>
-          
-    <li><a href="lawmaker.html"> Meet the Lone Lawmaker Who Voted Against the State Police Bill | Business News Nigeria </a></li>      
-          
-        <li><a href="operation.html">  Operation Kosaye: Police Rescue 5, Arrest 88 Suspects - The National Chronicle </a></li>
-        
-        <li><a href="inec.html"> INEC Awaits Court CTC on NDC Registration - The National Chronicle  </a></li>
-       
-<li><a href="political.html">End Political Killings in Osun, Human Rights Lawyer Petitions Inspector General of Police </a> </li>
-        
-        <li><a href="state_police"> Uzodimma Commends Tinubu, National Assembly Over State Police Bill </a> </li>
+
+        <h2 class="news-heading">Latest News</h2>
+        <ul class="news-list">
+            <li><a href="Us-Iran.html">Mixed Signals Over US-Iran Peace Talks in Doha</a></li>
+            <li><a href="Venezuela.html">Venezuela Earthquake Death Toll Rises Past 1,700</a></li>
+            <li><a href="Cup.html">World Cup Shock: Paraguay Knocks Out Germany</a></li>
+            <li><a href="Uk.html">UK Unveils Sweeping New AI-Driven Defense Plan</a></li>
         </ul>
     </main>
 
     <footer>
         <p>&copy; 2026 webBook Platform. All rights reserved. Read beautifully everywhere.</p>
     </footer>
-    
-    <script>
-        (function(s){s.dataset.zone='11186958',s.src='https://nap5k.com/tag.min.js'})([document.documentElement, document.body].filter(Boolean).pop().appendChild(document.createElement('script')))
-    </script>
       
 </body>
 </html>
